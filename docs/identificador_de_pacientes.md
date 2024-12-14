@@ -46,7 +46,7 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 - **Resultado Esperado**: O LCD deve exibir "Acesso Autorizado" dentro de 1 segundo após a leitura.
 - **Resultado Real**: Aproximado a TAG com mesmo UID cadastrado no sistema, mostrou-se na tela LCD "Acesso Autorizado".
 - **Status**: Passou.
-
+[Teste 1 - Acesso autorizado](../images/TesteAcessoAutorizado.jpeg)
 ---
 
 ### Caso de Teste 2: Leitura de Cartão RFID Não Autorizado
@@ -60,6 +60,7 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 - **Resultado Esperado**: O LCD deve exibir "Acesso Negado" dentro de 1 segundo após a leitura.
 - **Resultado Real**: Após passar o cartão com UID diferente, moutrou-se na tela LCD "Acesso Negado".
 - **Status**: Passou.
+[Teste 2 - Acesso negado](../images/TesteAcessoNegado.jpeg)
 
 ---
 
@@ -77,21 +78,7 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 
 ---
 
-### Caso de Teste 4: Leitura de Cartão com Passagem Rápida
-- **ID**: CT-004
-- **Descrição**: Validar se o sistema identifica corretamente um cartão que foi passado rápido demais.
-- **Pré-condição**: Um cartão autorizado ou não autorizado está disponível.
-- **Passos de Teste**:
-  1. Ligar o Arduino Mega.
-  2. Passar o cartão rapidamente pelo módulo PN532 (tempo de contato inferior a 500 ms).
-  3. Observar o LCD para verificar a mensagem exibida.
-- **Resultado Esperado**: O LCD deve exibir "Acesso Negado".
-- **Resultado Real**: Na passagem de forma a que o contato seja menor que 500ms, o LCD não trocou a mensagem.
-- **Status**: Falhou.
-
----
-
-### Caso de Teste 5: Recuperação de Erros
+### Caso de Teste 4: Recuperação de Erros
 - **ID**: CT-005
 - **Descrição**: Validar se o sistema retorna ao estado de espera após erros.
 - **Pré-condição**: Um cartão não autorizado é passado e o sistema está funcionando corretamente.
@@ -103,7 +90,7 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 - **Resultado Esperado**: O LCD deve retornar para "Waiting for card..." após a exibição de "Acesso Negado".
 - **Resultado Real**: Após negar o acesso, o código prontamente identificou que estava esperando o UID correto, logo no LCD mostrou "Waiting for card...".
 - **Status**: Passou.
-
+[Teste 4 - Esperando cartao](../images/TesteEsperandoCartao.jpeg)
 ---
 
 ## 4. Critérios de Aprovação
