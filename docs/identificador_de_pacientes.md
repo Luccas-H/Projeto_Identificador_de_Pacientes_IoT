@@ -46,7 +46,8 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 - **Resultado Esperado**: O LCD deve exibir "Acesso Autorizado" dentro de 1 segundo após a leitura.
 - **Resultado Real**: Aproximado a TAG com mesmo UID cadastrado no sistema, mostrou-se na tela LCD "Acesso Autorizado".
 - **Status**: Passou.
-[Teste 1 - Acesso autorizado](../images/TesteAcessoAutorizado.jpeg)
+
+![Teste 1 - Acesso autorizado](../images/TesteAcessoAutorizado.jpeg)
 ---
 
 ### Caso de Teste 2: Leitura de Cartão RFID Não Autorizado
@@ -60,7 +61,8 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 - **Resultado Esperado**: O LCD deve exibir "Acesso Negado" dentro de 1 segundo após a leitura.
 - **Resultado Real**: Após passar o cartão com UID diferente, moutrou-se na tela LCD "Acesso Negado".
 - **Status**: Passou.
-[Teste 2 - Acesso negado](../images/TesteAcessoNegado.jpeg)
+
+![Teste 2 - Acesso negado](../images/TesteAcessoNegado.jpeg)
 
 ---
 
@@ -90,7 +92,8 @@ Os testes serão realizados manualmente, com foco nos seguintes tipos:
 - **Resultado Esperado**: O LCD deve retornar para "Waiting for card..." após a exibição de "Acesso Negado".
 - **Resultado Real**: Após negar o acesso, o código prontamente identificou que estava esperando o UID correto, logo no LCD mostrou "Waiting for card...".
 - **Status**: Passou.
-[Teste 4 - Esperando cartao](../images/TesteEsperandoCartao.jpeg)
+
+![Teste 4 - Esperando cartao](../images/TesteEsperandoCartao.jpeg)
 ---
 
 ## 4. Critérios de Aprovação
